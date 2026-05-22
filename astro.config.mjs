@@ -3,8 +3,7 @@ import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
-  site: 'https://hikes-digital.github.io',
-  base: '/homepage',
+  site: 'https://hikes.digital',
   vite: {
     plugins: [tailwindcss()]
   }
