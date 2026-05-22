@@ -2,8 +2,745 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="hikes.digital">
-  <main class="min-h-screen flex items-center justify-center">
-    <h1 class="text-4xl font-bold">hikes.digital</h1>
-  </main>
+<Layout title="HIKES DIGITAL – SAP-Architektur & Entwicklung" description="Ihr Partner für SAP-Architektur, Fiori/UI5, ABAP und S/4HANA – mit Klarheit und Weitblick.">
+
+  <!-- ── NAVIGATION ── -->
+  <header id="site-header" class="fixed top-0 left-0 right-0 z-50 flex justify-between items-center px-8 md:px-14 py-5 transition-all duration-500">
+    <a href="/" id="nav-logo" class="opacity-0 transition-all duration-500 pointer-events-none">
+      <img
+        src="/images/logo/Logo_Hikes-Digital_Wort-Bildmarke_quer_rot-weiss.png"
+        alt="HIKES DIGITAL"
+        class="h-12 w-auto"
+      />
+    </a>
+    <nav class="hidden md:flex gap-10">
+      <a href="#leistungen" class="text-base font-bold tracking-widest uppercase text-white/85 hover:text-white transition-colors">Leistungen</a>
+      <a href="#philosophie" class="text-base font-bold tracking-widest uppercase text-white/85 hover:text-white transition-colors">Philosophie</a>
+      <a href="#projekte" class="text-base font-bold tracking-widest uppercase text-white/85 hover:text-white transition-colors">Projekte</a>
+      <a href="#ueber-uns" class="text-base font-bold tracking-widest uppercase text-white/85 hover:text-white transition-colors">Über uns</a>
+      <a href="#kontakt" class="text-base font-bold tracking-widest uppercase text-[#E94B53] hover:text-white transition-colors">Kontakt</a>
+    </nav>
+  </header>
+
+  <!-- ── HERO ── -->
+  <section class="relative flex items-end overflow-hidden h-screen">
+
+    <!-- Background image -->
+    <img
+      id="hero-img"
+      src="/images/hikes_digital_header.jpeg"
+      alt="Berglandschaft"
+      class="absolute inset-0 w-full h-full object-cover will-change-transform"
+    />
+
+    <!-- Dark overlay -->
+    <div class="absolute inset-0 bg-gradient-to-t from-[#0F1828] via-[#0F1828]/40 to-[#0F1828]/20"></div>
+
+    <!-- Logo signet watermark top-left -->
+    <div class="absolute top-20 left-6 w-56 md:w-72 pointer-events-none z-10 signet-animate">
+      <img
+        src="/images/logo/Logo_Hikes-Digital_Bildmarke_rot.png"
+        alt=""
+        class="w-full h-full object-contain brightness-0 invert"
+      />
+    </div>
+
+    <!-- Text content bottom-left -->
+    <div class="relative z-10 px-8 md:px-14 pb-16 max-w-5xl">
+      <h1 data-reveal data-delay="100" class="text-7xl md:text-9xl font-bold text-white leading-none uppercase whitespace-nowrap">
+        HIKES DIGITAL
+      </h1>
+      <p data-reveal data-delay="200" class="mt-4 text-xl md:text-2xl font-light text-white/80 max-w-2xl">
+        SAP-Architektur & Entwicklung mit Klarheit und Weitblick
+      </p>
+      <div data-reveal data-delay="300" class="mt-8 flex gap-4">
+        <a href="#leistungen" class="px-8 py-4 bg-[#E94B53] text-white text-base font-bold tracking-widest uppercase hover:bg-white hover:text-[#0F1828] transition-colors">
+          Leistungen
+        </a>
+        <a href="#kontakt" class="px-8 py-4 border border-white/30 text-white text-base font-bold tracking-widest uppercase hover:border-white transition-colors">
+          Kontakt
+        </a>
+      </div>
+    </div>
+
+    <!-- Arrow bottom-right -->
+    <div class="absolute bottom-8 right-10 z-10">
+      <a href="#intro" aria-label="Nach unten scrollen">
+        <img src="/images/objects/arrow-down.svg" alt="" class="w-20 h-20 opacity-90 hover:opacity-100 transition-opacity" />
+      </a>
+    </div>
+  </section>
+
+  <!-- ── INTRO ── -->
+  <section id="intro" class="bg-[#0F1828] text-white py-28 px-8 md:px-14">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-start">
+      <h2 data-reveal="left" class="text-4xl md:text-5xl font-bold leading-tight">
+        Spezialisiert auf SAP,<br/>fokussiert auf<br/>Ihren Erfolg.
+      </h2>
+      <div data-reveal="right">
+        <p class="text-xl md:text-2xl font-light text-white/80 leading-relaxed">
+          Wie erfahrene Pfadfinder navigieren wir durch das SAP-Gelände: mit tiefem Know-how in ABAP, SAP Fiori und S/4HANA. Wir begleiten Unternehmen sicher durch Systemwechsel, Individualentwicklungen und digitale Herausforderungen – Schritt für Schritt, zielgerichtet und mit klarem Kompass.
+        </p>
+        <div class="mt-8 w-14 h-0.5 bg-[#E94B53]"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── LEISTUNGEN ── -->
+  <section id="leistungen" class="bg-[#0B1220] text-white py-28 px-8 md:px-14">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-base font-bold tracking-[0.3em] uppercase text-[#E94B53] mb-5">Was wir tun</p>
+      <h2 class="text-5xl md:text-6xl font-bold mb-20 max-w-xl">Leistungen, die den Weg ebnen.</h2>
+
+      <div class="divide-y divide-white/10 border-y border-white/10">
+
+        <!-- Row 1 -->
+        <div class="leistung-item" data-reveal data-delay="100">
+          <button class="leistung-toggle group w-full text-left flex items-center gap-8 md:gap-16 py-10 cursor-pointer">
+            <div class="leistung-icon shrink-0 text-white/40 group-hover:text-[#E94B53] transition-colors duration-300">
+              <svg width="48" height="48" viewBox="0 0 32 32" fill="none">
+                <rect x="11" y="2" width="10" height="7" rx="1.5" stroke="currentColor" stroke-width="2.5"/>
+                <rect x="2" y="22" width="10" height="7" rx="1.5" stroke="currentColor" stroke-width="2.5"/>
+                <rect x="20" y="22" width="10" height="7" rx="1.5" stroke="currentColor" stroke-width="2.5"/>
+                <path d="M16 9V15M16 15H7M16 15H25M7 15V22M25 15V22" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="leistung-bar shrink-0 w-0.5 h-14 bg-white/10 group-hover:bg-[#E94B53] transition-colors duration-300"></div>
+            <div class="flex-1 min-w-0">
+              <h3 class="text-2xl md:text-3xl font-bold uppercase tracking-wide text-white group-hover:text-[#E94B53] transition-colors duration-300 mb-2">Architektur & Konzeption</h3>
+              <p class="text-lg font-light text-white/75 leading-relaxed">SAP-Lösungen ganzheitlich gedacht – von Anfang an mit klarem Fokus auf nachhaltige, skalierbare technische Konzepte.</p>
+            </div>
+            <svg class="leistung-chevron shrink-0 w-7 h-7 text-white/30 group-hover:text-[#E94B53] transition-all duration-300" viewBox="0 0 24 24" fill="none">
+              <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="leistung-body overflow-hidden max-h-0 transition-[max-height] duration-500 ease-in-out">
+            <div class="flex gap-8 md:gap-16 pb-10">
+              <div class="shrink-0 w-12"></div>
+              <div class="leistung-bar-ext shrink-0 w-0.5 bg-white/10"></div>
+              <div class="flex-1 space-y-4 text-lg font-light text-white/80 leading-relaxed">
+                <p>Wir denken SAP-Lösungen von Anfang an ganzheitlich – mit einem klaren Fokus auf nachhaltige technische Konzepte. Als Sparringspartner unterstützen wir Projektteams und Entscheider dabei, tragfähige Architekturen zu entwickeln, saubere Erweiterungspunkte zu identifizieren und moderne Technologien sinnvoll einzusetzen.</p>
+                <p>Unser Anspruch: Lösungen, die nicht nur heute funktionieren, sondern auch morgen noch weitergedacht werden können.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="leistung-item" data-reveal data-delay="200">
+          <button class="leistung-toggle group w-full text-left flex items-center gap-8 md:gap-16 py-10 cursor-pointer">
+            <div class="leistung-icon shrink-0 text-white/40 group-hover:text-[#E94B53] transition-colors duration-300">
+              <svg width="48" height="48" viewBox="0 0 32 32" fill="none"><rect x="3" y="5" width="26" height="18" rx="2" stroke="currentColor" stroke-width="2.5"/><path d="M10 27H22" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M16 23V27" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+            </div>
+            <div class="leistung-bar shrink-0 w-0.5 h-14 bg-white/10 group-hover:bg-[#E94B53] transition-colors duration-300"></div>
+            <div class="flex-1 min-w-0">
+              <h3 class="text-2xl md:text-3xl font-bold uppercase tracking-wide text-white group-hover:text-[#E94B53] transition-colors duration-300 mb-2">Fiori & UI5</h3>
+              <p class="text-lg font-light text-white/75 leading-relaxed">Nutzerzentrierte, moderne Oberflächen, die SAP-Standards sinnvoll erweitern – technisch solide und wartbar.</p>
+            </div>
+            <svg class="leistung-chevron shrink-0 w-7 h-7 text-white/30 group-hover:text-[#E94B53] transition-all duration-300" viewBox="0 0 24 24" fill="none">
+              <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="leistung-body overflow-hidden max-h-0 transition-[max-height] duration-500 ease-in-out">
+            <div class="flex gap-8 md:gap-16 pb-10">
+              <div class="shrink-0 w-12"></div>
+              <div class="leistung-bar-ext shrink-0 w-0.5 bg-white/10"></div>
+              <div class="flex-1 space-y-4 text-lg font-light text-white/80 leading-relaxed">
+                <p>Moderne Oberflächen sind mehr als nur schick – sie machen Prozesse verständlicher, schneller und angenehmer. Wir entwickeln passgenaue Fiori- und UI5-Anwendungen, die den SAP-Standard gezielt erweitern.</p>
+                <p>Dabei achten wir nicht nur auf Design, sondern auch auf technische Qualität, Wiederverwendbarkeit und einfache Wartung.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="leistung-item" data-reveal data-delay="300">
+          <button class="leistung-toggle group w-full text-left flex items-center gap-8 md:gap-16 py-10 cursor-pointer">
+            <div class="leistung-icon shrink-0 text-white/40 group-hover:text-[#E94B53] transition-colors duration-300">
+              <svg width="48" height="48" viewBox="0 0 32 32" fill="none"><path d="M8 10L4 16L8 22" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M24 10L28 16L24 22" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M19 6L13 26" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+            </div>
+            <div class="leistung-bar shrink-0 w-0.5 h-14 bg-white/10 group-hover:bg-[#E94B53] transition-colors duration-300"></div>
+            <div class="flex-1 min-w-0">
+              <h3 class="text-2xl md:text-3xl font-bold uppercase tracking-wide text-white group-hover:text-[#E94B53] transition-colors duration-300 mb-2">ABAP Entwicklung</h3>
+              <p class="text-lg font-light text-white/75 leading-relaxed">Sauberer Code mit modernen Ansätzen – Clean ABAP, RAP und CDS mit dem Blick für das große Ganze.</p>
+            </div>
+            <svg class="leistung-chevron shrink-0 w-7 h-7 text-white/30 group-hover:text-[#E94B53] transition-all duration-300" viewBox="0 0 24 24" fill="none">
+              <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="leistung-body overflow-hidden max-h-0 transition-[max-height] duration-500 ease-in-out">
+            <div class="flex gap-8 md:gap-16 pb-10">
+              <div class="shrink-0 w-12"></div>
+              <div class="leistung-bar-ext shrink-0 w-0.5 bg-white/10"></div>
+              <div class="flex-1 space-y-4 text-lg font-light text-white/80 leading-relaxed">
+                <p>Sauberer Code ist kein Zufall. Wir entwickeln maßgeschneiderte ABAP-Lösungen, die nicht nur funktionieren, sondern auch strukturiert, erweiterbar und zukunftssicher sind.</p>
+                <p>Dabei bringen wir moderne Entwicklungsansätze wie Clean ABAP, RAP oder CDS gezielt zum Einsatz – immer mit Blick auf die Gesamtarchitektur.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 4 -->
+        <div class="leistung-item" data-reveal data-delay="400">
+          <button class="leistung-toggle group w-full text-left flex items-center gap-8 md:gap-16 py-10 cursor-pointer">
+            <div class="leistung-icon shrink-0 text-white/40 group-hover:text-[#E94B53] transition-colors duration-300">
+              <svg width="48" height="48" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="2.5"/><path d="M16 8V16L21 19" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="leistung-bar shrink-0 w-0.5 h-14 bg-white/10 group-hover:bg-[#E94B53] transition-colors duration-300"></div>
+            <div class="flex-1 min-w-0">
+              <h3 class="text-2xl md:text-3xl font-bold uppercase tracking-wide text-white group-hover:text-[#E94B53] transition-colors duration-300 mb-2">S/4HANA Readiness</h3>
+              <p class="text-lg font-light text-white/75 leading-relaxed">Gezielte Analysen, Machbarkeitsbewertungen und objektive Code-Reviews für Migrationen und Optimierungen.</p>
+            </div>
+            <svg class="leistung-chevron shrink-0 w-7 h-7 text-white/30 group-hover:text-[#E94B53] transition-all duration-300" viewBox="0 0 24 24" fill="none">
+              <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="leistung-body overflow-hidden max-h-0 transition-[max-height] duration-500 ease-in-out">
+            <div class="flex gap-8 md:gap-16 pb-10">
+              <div class="shrink-0 w-12"></div>
+              <div class="leistung-bar-ext shrink-0 w-0.5 bg-white/10"></div>
+              <div class="flex-1 space-y-4 text-lg font-light text-white/80 leading-relaxed">
+                <p>Ein Umstieg auf S/4HANA erfordert mehr als nur einen technischen Upgrade. Wir unterstützen mit gezielten Analysen, Machbarkeitsbewertungen und objektiven Code Reviews – damit alte Zöpfe abgeschnitten und moderne Standards genutzt werden können.</p>
+                <p>Auch als Vorbereitung für Brownfield-Projekte oder gezielte Optimierungen im laufenden Betrieb.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── PHILOSOPHIE / WARUM ── -->
+  <section id="philosophie" class="relative h-[50vh] flex items-end overflow-hidden">
+    <img
+      src="/images/hikes_it-beratung.png"
+      alt="Berglandschaft mit Wanderer"
+      class="absolute inset-0 w-full h-full object-cover object-center"
+    />
+    <div class="absolute inset-0 bg-gradient-to-t from-[#0F1828] via-[#0F1828]/20 to-transparent"></div>
+    <div class="relative z-10 px-8 md:px-14 pb-10">
+      <h2 class="text-6xl md:text-8xl lg:text-9xl font-bold text-white uppercase leading-none tracking-tight">
+        Warum HIKES DIGITAL?
+      </h2>
+    </div>
+  </section>
+
+  <!-- WARUM content – condensed -->
+  <section class="bg-[#0F1828] text-white py-16 px-8 md:px-14">
+    <div class="max-w-6xl mx-auto">
+
+      <!-- Intro + pullquote side by side -->
+      <div class="grid md:grid-cols-2 gap-12 mb-12 pb-12 border-b border-white/10">
+        <div data-reveal="left">
+          <p class="text-xl font-light text-white/80 leading-relaxed mb-4">
+            HIKES DIGITAL ist eine SAP-Technologieberatung mit klarem Fokus:
+            <strong class="font-bold text-white"> nachhaltige Lösungen statt kurzfristiger Workarounds.</strong>
+          </p>
+          <p class="text-lg font-light text-white/75 leading-relaxed">
+            Wir unterstützen Unternehmen dabei, ihre SAP-Systeme zukunftssicher, effizient und nutzerfreundlich zu gestalten – mit moderner Entwicklung, sauberer Architektur und einem echten Verständnis für die Prozesse dahinter.
+          </p>
+        </div>
+        <div data-reveal="right">
+          <p class="text-base font-bold tracking-[0.3em] uppercase text-[#E94B53] mb-4">Was uns auszeichnet</p>
+          <p class="text-lg font-light text-white/80 leading-relaxed mb-3">
+            Für unsere Kunden sind wir ein verlässlicher Partner in komplexen SAP-Vorhaben – lösungsorientiert, partnerschaftlich und mit Weitblick.
+          </p>
+          <p class="text-lg font-light text-white/80 leading-relaxed">
+            Stabile, erweiterbare SAP-Komponenten, die sich im Alltag bewähren – mit modernen Technologien und bewährten Standards.
+          </p>
+        </div>
+      </div>
+
+      <!-- Wer dahintersteht + speech bubble quote -->
+      <div class="grid md:grid-cols-2 gap-12 items-start">
+        <div data-reveal="left">
+          <p class="text-base font-bold tracking-[0.3em] uppercase text-[#E94B53] mb-4">Wer dahintersteht</p>
+          <p class="text-lg font-light text-white/80 leading-relaxed mb-3">
+            Gegründet wurde HIKES DIGITAL von Maik Pfäffle – SAP-Entwickler und Architekt mit langjähriger Erfahrung in ABAP, Fiori und S/4HANA-Projekten.
+          </p>
+          <p class="text-lg font-light text-white/80 leading-relaxed">
+            Was ihn antreibt: der Wunsch, ein Unternehmen aufzubauen, das nicht nur Strategien entwirft, sondern moderne SAP-Lösungen realisiert – mit Fokus auf technische Konzeption, zukunftsfähige Architektur und eine Umsetzung, die im Alltag der Kunden spürbar wird.
+          </p>
+        </div>
+
+        <div data-reveal="right">
+          <!-- Speech bubble -->
+          <div class="relative">
+            <div class="bg-[#E94B53] p-8 rounded-2xl">
+              <p class="text-white font-light italic leading-relaxed text-lg">
+                „Ich freue mich, wenn unsere Arbeit im Alltag der Kunden spürbar ist – wenn HIKES DIGITAL für Lösungen steht, auf die man sich verlassen kann, die nicht nur funktionieren, sondern auch im Unternehmen wirken."
+              </p>
+            </div>
+            <!-- Tail pointing bottom-left, flush with rounded corner -->
+            <div class="w-5 h-5 bg-[#E94B53]" style="clip-path: polygon(0 0, 100% 0, 0 100%); margin-left: 2.5rem;"></div>
+          </div>
+          <div class="flex items-center gap-4 mt-4">
+            <img
+              src="/images/employees/maik/DSC09725%20Klein.png"
+              alt="Maik Pfäffle"
+              class="w-14 h-14 rounded-full object-cover object-top"
+            />
+            <div>
+              <p class="font-bold text-white text-base">Maik Pfäffle</p>
+              <p class="font-light text-white/65 text-base">Geschäftsführer & IT-Berater</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── PROJEKTE ── -->
+  <section id="projekte" class="bg-[#131f33] text-white py-28 px-8 md:px-14">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-base font-bold tracking-[0.3em] uppercase text-[#E94B53] mb-5">Referenzen</p>
+      <h2 class="text-5xl md:text-6xl font-bold mb-20 max-w-xl">Projekte, die Spuren hinterlassen.</h2>
+
+      <div class="grid md:grid-cols-2 gap-px bg-white/5">
+
+        <!-- Tile 1 — tall -->
+        <button data-modal="projekt1" data-reveal data-delay="100"
+          class="group relative bg-[#0F1828] overflow-hidden text-left p-12 min-h-[22rem] flex flex-col justify-end cursor-pointer">
+          <!-- big background number -->
+          <span class="absolute top-4 right-6 text-[9rem] font-bold leading-none text-white/[0.04] select-none pointer-events-none transition-colors duration-500 group-hover:text-white/[0.08]">01</span>
+          <!-- red hover fill -->
+          <div class="absolute inset-0 bg-[#E94B53] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <div class="relative z-10">
+            <p class="text-sm font-bold tracking-[0.25em] uppercase text-[#E94B53] group-hover:text-white mb-4 transition-colors duration-300">BRF+ · RAP · Fiori</p>
+            <h3 class="text-2xl md:text-3xl font-bold text-white leading-snug mb-6">
+              Intelligente Verteilung von Materialstammdaten
+            </h3>
+            <span class="inline-flex items-center gap-2 text-sm font-bold tracking-widest uppercase text-white/80 group-hover:text-white transition-colors duration-300">
+              Details ansehen
+              <svg class="w-4 h-4 translate-x-0 group-hover:translate-x-1 transition-transform duration-300" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </div>
+        </button>
+
+        <!-- Tile 2 — short + offset feel via padding -->
+        <button data-modal="projekt2" data-reveal data-delay="200"
+          class="group relative bg-[#131f33] overflow-hidden text-left p-12 min-h-[22rem] flex flex-col justify-end cursor-pointer">
+          <span class="absolute top-4 right-6 text-[9rem] font-bold leading-none text-white/[0.04] select-none pointer-events-none transition-colors duration-500 group-hover:text-white/[0.08]">02</span>
+          <div class="absolute inset-0 bg-[#E94B53] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <div class="relative z-10">
+            <p class="text-sm font-bold tracking-[0.25em] uppercase text-[#E94B53] group-hover:text-white mb-4 transition-colors duration-300">OData · IDoc · Integration</p>
+            <h3 class="text-2xl md:text-3xl font-bold text-white leading-snug mb-6">
+              SAP-Integration einer Non-SAP Cloud-Lösung im Einkauf
+            </h3>
+            <span class="inline-flex items-center gap-2 text-sm font-bold tracking-widest uppercase text-white/80 group-hover:text-white transition-colors duration-300">
+              Details ansehen
+              <svg class="w-4 h-4 translate-x-0 group-hover:translate-x-1 transition-transform duration-300" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </div>
+        </button>
+
+        <!-- Tile 3 -->
+        <button data-modal="projekt3" data-reveal data-delay="300"
+          class="group relative bg-[#131f33] overflow-hidden text-left p-12 min-h-[22rem] flex flex-col justify-end cursor-pointer">
+          <span class="absolute top-4 right-6 text-[9rem] font-bold leading-none text-white/[0.04] select-none pointer-events-none transition-colors duration-500 group-hover:text-white/[0.08]">03</span>
+          <div class="absolute inset-0 bg-[#E94B53] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <div class="relative z-10">
+            <p class="text-sm font-bold tracking-[0.25em] uppercase text-[#E94B53] group-hover:text-white mb-4 transition-colors duration-300">SAPUI5 · QM · Digitalisierung</p>
+            <h3 class="text-2xl md:text-3xl font-bold text-white leading-snug mb-6">
+              SAPUI5-Wizard zur Digitalisierung des Erstmusterprozesses
+            </h3>
+            <span class="inline-flex items-center gap-2 text-sm font-bold tracking-widest uppercase text-white/80 group-hover:text-white transition-colors duration-300">
+              Details ansehen
+              <svg class="w-4 h-4 translate-x-0 group-hover:translate-x-1 transition-transform duration-300" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </div>
+        </button>
+
+        <!-- Tile 4 -->
+        <button data-modal="projekt4" data-reveal data-delay="400"
+          class="group relative bg-[#0F1828] overflow-hidden text-left p-12 min-h-[22rem] flex flex-col justify-end cursor-pointer">
+          <span class="absolute top-4 right-6 text-[9rem] font-bold leading-none text-white/[0.04] select-none pointer-events-none transition-colors duration-500 group-hover:text-white/[0.08]">04</span>
+          <div class="absolute inset-0 bg-[#E94B53] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <div class="relative z-10">
+            <p class="text-sm font-bold tracking-[0.25em] uppercase text-[#E94B53] group-hover:text-white mb-4 transition-colors duration-300">S/4HANA · ABAP · Migration</p>
+            <h3 class="text-2xl md:text-3xl font-bold text-white leading-snug mb-6">
+              S/4HANA-Migration: Zukunftssichere ABAP-Transformation
+            </h3>
+            <span class="inline-flex items-center gap-2 text-sm font-bold tracking-widest uppercase text-white/80 group-hover:text-white transition-colors duration-300">
+              Details ansehen
+              <svg class="w-4 h-4 translate-x-0 group-hover:translate-x-1 transition-transform duration-300" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </div>
+        </button>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ÜBER MICH ── -->
+  <section id="ueber-uns" class="bg-[#0F1828] text-white py-28 px-8 md:px-14">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+      <div class="relative">
+        <img
+          src="/images/employees/maik/DSC09725%20Klein.png"
+          alt="Maik Pfäffle"
+          class="w-full max-w-sm mx-auto object-cover"
+        />
+      </div>
+      <div>
+        <p class="text-base font-bold tracking-[0.3em] uppercase text-[#E94B53] mb-5">Über uns</p>
+        <h2 class="text-5xl md:text-6xl font-bold mb-4 leading-tight">Maik Pfäffle</h2>
+        <p class="text-base font-bold tracking-widest uppercase text-white/75 mb-10">SAP Architect & Founder</p>
+        <p class="text-xl font-light text-white/80 leading-relaxed mb-6">
+          Mit langjähriger Erfahrung in ABAP, Fiori und S/4HANA habe ich HIKES DIGITAL gegründet, um Unternehmen einen Partner zu bieten, der Strategie und technische Umsetzung wirklich zusammendenkt.
+        </p>
+        <p class="text-xl font-light text-white/80 leading-relaxed">
+          Mein Anspruch: Lösungen, die nicht nur heute funktionieren – sondern die das Fundament für morgen legen.
+        </p>
+        <div class="mt-10 w-14 h-0.5 bg-[#E94B53]"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── KONTAKTFORMULAR ── -->
+  <section id="kontaktformular" class="bg-[#131f33] text-white py-28 px-8 md:px-14">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-20 items-start">
+
+      <div>
+        <p data-reveal class="text-base font-bold tracking-[0.3em] uppercase text-[#E94B53] mb-5">Kontakt</p>
+        <h2 data-reveal class="text-5xl md:text-6xl font-bold leading-tight mb-8 uppercase">
+          Finden wir<br/>Ihren Weg!
+        </h2>
+        <p data-reveal class="text-xl font-light text-white/80 leading-relaxed">
+          Sie haben Fragen oder einen konkreten Bedarf? Treten Sie mit uns in die Wanderstiefel und lassen uns gemeinsam mit Ihrer Tourenplanung beginnen.
+        </p>
+        <div class="mt-10 w-14 h-0.5 bg-[#E94B53]"></div>
+      </div>
+
+      <form id="contact-form" data-reveal="right" class="space-y-5" name="kontakt" method="POST" action="https://formspree.io/f/xojrqveg">
+        <div class="grid grid-cols-2 gap-5">
+          <div class="flex flex-col gap-2">
+            <label class="text-sm font-bold tracking-widest uppercase text-white/65">Vorname</label>
+            <input type="text" name="vorname" required
+              class="bg-white/5 border border-white/10 text-white placeholder-white/20 px-5 py-4 text-base font-light focus:outline-none focus:border-[#E94B53] transition-colors" />
+          </div>
+          <div class="flex flex-col gap-2">
+            <label class="text-sm font-bold tracking-widest uppercase text-white/65">Nachname</label>
+            <input type="text" name="nachname" required
+              class="bg-white/5 border border-white/10 text-white placeholder-white/20 px-5 py-4 text-base font-light focus:outline-none focus:border-[#E94B53] transition-colors" />
+          </div>
+        </div>
+        <div class="flex flex-col gap-2">
+          <label class="text-sm font-bold tracking-widest uppercase text-white/65">E-Mail</label>
+          <input type="email" name="email" required
+            class="w-full bg-white/5 border border-white/10 text-white placeholder-white/20 px-5 py-4 text-base font-light focus:outline-none focus:border-[#E94B53] transition-colors" />
+        </div>
+        <div class="flex flex-col gap-2">
+          <label class="text-sm font-bold tracking-widest uppercase text-white/65">Ihr Anliegen</label>
+          <textarea name="nachricht" rows="6" required
+            class="w-full bg-white/5 border border-white/10 text-white placeholder-white/20 px-5 py-4 text-base font-light focus:outline-none focus:border-[#E94B53] transition-colors resize-none"></textarea>
+        </div>
+        <button id="contact-submit" type="submit"
+          class="w-full py-5 bg-[#E94B53] text-white text-base font-bold tracking-widest uppercase hover:bg-white hover:text-[#0F1828] transition-colors disabled:opacity-50 disabled:cursor-not-allowed">
+          Nachricht senden
+        </button>
+        <!-- Success / error feedback -->
+        <div id="form-success" class="hidden text-center py-6 border border-[#E94B53]/40 bg-[#E94B53]/10">
+          <p class="font-bold text-white text-xl mb-1">Vielen Dank!</p>
+          <p class="text-white/80 font-light">Ihre Nachricht ist bei uns angekommen. Wir melden uns bald.</p>
+        </div>
+        <div id="form-error" class="hidden text-center py-4 border border-white/20">
+          <p class="text-white/80 font-light text-base">Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder schreiben Sie uns direkt an <a href="mailto:info@hikes.digital" class="text-[#E94B53]">info@hikes.digital</a>.</p>
+        </div>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- ── KONTAKT + FOOTER ── -->
+  <section id="kontakt" class="bg-[#E94B53] px-8 md:px-14 pt-16 pb-10">
+    <div class="max-w-6xl mx-auto">
+      <h2 data-reveal class="text-5xl md:text-6xl font-bold text-white mb-14">Kontakt</h2>
+
+      <div data-reveal class="grid md:grid-cols-3 gap-12 pb-12 border-b border-white/20">
+        <div class="text-white font-light text-lg leading-loose">
+          <p class="font-bold mb-1">HIKES DIGITAL GmbH</p>
+          <p>Josef-Maier-Straße 21</p>
+          <p>88682 Salem</p>
+        </div>
+        <div class="text-white font-light text-lg leading-loose">
+          <p>Tel. 0176 55735688</p>
+          <p>Mail. maik.pfaeffle@hikes.digital</p>
+        </div>
+        <div class="flex flex-col items-end justify-between gap-8">
+          <div class="text-white font-light text-lg text-right space-y-1">
+            <p>Datenschutz</p>
+            <p><a href="/impressum" class="hover:text-white/85 transition-colors">Impressum</a></p>
+          </div>
+          <div class="flex items-center gap-3">
+            <img src="/images/logo/Logo_Hikes-Digital_Bildmarke_rot.png" alt="" class="h-12 w-auto brightness-0 invert" />
+            <div>
+              <p class="text-white font-bold text-lg leading-tight">HIKES DIGITAL</p>
+              <p class="text-white/85 font-light text-xs tracking-wide">Your partner to hike to the digital summit</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-white/75 font-light text-sm mt-6 text-center">
+        © {new Date().getFullYear()} HIKES DIGITAL GmbH. Alle Rechte vorbehalten.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── SCRIPTS ── -->
+  <!-- ── MODAL OVERLAY ── -->
+  <div id="modal-overlay" class="fixed inset-0 z-[200] flex items-center justify-center p-6 opacity-0 pointer-events-none transition-opacity duration-300">
+    <div class="absolute inset-0 bg-[#0F1828]/90 backdrop-blur-sm" id="modal-backdrop"></div>
+    <div id="modal-box" class="relative bg-[#131f33] border border-white/10 max-w-2xl w-full max-h-[85vh] overflow-y-auto translate-y-8 transition-transform duration-300 shadow-2xl">
+      <!-- Red top bar -->
+      <div class="h-1 bg-[#E94B53] w-full"></div>
+      <!-- Close button -->
+      <button id="modal-close" class="absolute top-5 right-6 text-white/75 hover:text-white transition-colors text-2xl leading-none font-light">✕</button>
+      <div class="p-10 md:p-14">
+        <div id="modal-icon" class="text-[#E94B53] mb-6"></div>
+        <p id="modal-tags" class="text-sm font-bold tracking-[0.25em] uppercase text-[#E94B53] mb-4 hidden"></p>
+        <h3 id="modal-title" class="text-4xl font-bold uppercase tracking-wide text-white mb-8"></h3>
+        <div id="modal-body" class="text-lg font-light text-white/85 leading-relaxed space-y-4"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // ── Scroll reveal ──
+    const revealEls = document.querySelectorAll('[data-reveal]');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    revealEls.forEach((el) => revealObserver.observe(el));
+
+    // Trigger hero elements immediately (already in view on load)
+    document.querySelectorAll('[data-reveal]').forEach((el) => {
+      if (el.getBoundingClientRect().top < window.innerHeight) {
+        setTimeout(() => el.classList.add('is-visible'),
+          parseInt(el.dataset.delay || '0'));
+      }
+    });
+
+    // ── Header transparency on scroll ──
+    const header = document.getElementById('site-header');
+    const updateHeader = () => {
+      if (window.scrollY > 60) {
+        header.classList.add('bg-[#0F1828]/90', 'backdrop-blur-md');
+        header.classList.remove('bg-transparent');
+      } else {
+        header.classList.remove('bg-[#0F1828]/90', 'backdrop-blur-md');
+        header.classList.add('bg-transparent');
+      }
+    };
+    updateHeader();
+    window.addEventListener('scroll', updateHeader, { passive: true });
+
+    // ── Nav logo show/hide based on hero ──
+    const navLogo = document.getElementById('nav-logo');
+    const heroSection = document.querySelector('section');
+    const logoObserver = new IntersectionObserver(([entry]) => {
+      const past = !entry.isIntersecting;
+      navLogo.classList.toggle('opacity-0', !past);
+      navLogo.classList.toggle('pointer-events-none', !past);
+    }, { threshold: 0.1 });
+    if (heroSection) logoObserver.observe(heroSection);
+
+    // ── Hero parallax ──
+    const heroImg = document.getElementById('hero-img');
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+      if (heroImg && scrollY < window.innerHeight) {
+        heroImg.style.transform = `translateY(${scrollY * 0.35}px)`;
+      }
+    }, { passive: true });
+
+    // ── Active nav highlight ──
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('nav a[href^="#"]');
+
+    const navObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          navLinks.forEach((link) => {
+            const active = link.getAttribute('href') === `#${entry.target.id}`;
+            link.classList.toggle('!text-[#E94B53]', active);
+          });
+        }
+      });
+    }, { rootMargin: '-40% 0px -55% 0px' });
+
+    sections.forEach((section) => navObserver.observe(section));
+
+    // ── Modal overlay ──
+    const modalData = {
+      architektur: {
+        icon: `<svg width="44" height="44" viewBox="0 0 32 32" fill="none"><rect x="11" y="2" width="10" height="7" rx="1.5" stroke="currentColor" stroke-width="2.5"/><rect x="2" y="22" width="10" height="7" rx="1.5" stroke="currentColor" stroke-width="2.5"/><rect x="20" y="22" width="10" height="7" rx="1.5" stroke="currentColor" stroke-width="2.5"/><path d="M16 9V15M16 15H7M16 15H25M7 15V22M25 15V22" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>`,
+        title: 'Architektur & Konzeption',
+        body: `<p>Wir denken SAP-Lösungen von Anfang an ganzheitlich – mit einem klaren Fokus auf nachhaltige technische Konzepte. Als Sparringspartner unterstützen wir Projektteams und Entscheider dabei, tragfähige Architekturen zu entwickeln, saubere Erweiterungspunkte zu identifizieren und moderne Technologien sinnvoll einzusetzen.</p><p>Unser Anspruch: Lösungen, die nicht nur heute funktionieren, sondern auch morgen noch weitergedacht werden können.</p>`
+      },
+      fiori: {
+        icon: `<svg width="44" height="44" viewBox="0 0 32 32" fill="none"><rect x="3" y="5" width="26" height="18" rx="2" stroke="currentColor" stroke-width="2.5"/><path d="M10 27H22" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M16 23V27" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>`,
+        title: 'Fiori & UI5',
+        body: `<p>Moderne Oberflächen sind mehr als nur schick – sie machen Prozesse verständlicher, schneller und angenehmer. Wir entwickeln passgenaue Fiori- und UI5-Anwendungen, die den SAP-Standard gezielt erweitern.</p><p>Dabei achten wir nicht nur auf Design, sondern auch auf technische Qualität, Wiederverwendbarkeit und einfache Wartung.</p>`
+      },
+      abap: {
+        icon: `<svg width="44" height="44" viewBox="0 0 32 32" fill="none"><path d="M8 10L4 16L8 22" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M24 10L28 16L24 22" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M19 6L13 26" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>`,
+        title: 'ABAP Entwicklung',
+        body: `<p>Sauberer Code ist kein Zufall. Wir entwickeln maßgeschneiderte ABAP-Lösungen, die nicht nur funktionieren, sondern auch strukturiert, erweiterbar und zukunftssicher sind.</p><p>Dabei bringen wir moderne Entwicklungsansätze wie Clean ABAP, RAP oder CDS gezielt zum Einsatz – immer mit Blick auf die Gesamtarchitektur.</p>`
+      },
+      s4hana: {
+        icon: `<svg width="44" height="44" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="2.5"/><path d="M16 8V16L21 19" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
+        title: 'S/4HANA Readiness',
+        body: `<p>Ein Umstieg auf S/4HANA erfordert mehr als nur einen technischen Upgrade. Wir unterstützen mit gezielten Analysen, Machbarkeitsbewertungen und objektiven Code Reviews – damit alte Zöpfe abgeschnitten und moderne Standards genutzt werden können.</p><p>Auch als Vorbereitung für Brownfield-Projekte oder gezielte Optimierungen im laufenden Betrieb.</p>`
+      }
+    };
+
+    const overlay = document.getElementById('modal-overlay');
+    const modalBox = document.getElementById('modal-box');
+    const modalIcon = document.getElementById('modal-icon');
+    const modalTitle = document.getElementById('modal-title');
+    const modalTags = document.getElementById('modal-tags');
+    const modalBody = document.getElementById('modal-body');
+    const modalClose = document.getElementById('modal-close');
+    const modalBackdrop = document.getElementById('modal-backdrop');
+
+    function openModal(key) {
+      const data = modalData[key];
+      if (!data) return;
+      modalIcon.innerHTML = data.icon;
+      if (data.tags) {
+        modalTags.textContent = data.tags;
+        modalTags.classList.remove('hidden');
+      } else {
+        modalTags.classList.add('hidden');
+      }
+      modalTitle.textContent = data.title;
+      modalBody.innerHTML = data.body;
+      overlay.classList.remove('opacity-0', 'pointer-events-none');
+      requestAnimationFrame(() => modalBox.classList.remove('translate-y-8'));
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      modalBox.classList.add('translate-y-8');
+      overlay.classList.add('opacity-0', 'pointer-events-none');
+      document.body.style.overflow = '';
+    }
+
+    // Projekt tiles still use modal
+    document.querySelectorAll('[data-modal]').forEach((btn) => {
+      btn.addEventListener('click', () => openModal(btn.dataset.modal));
+    });
+
+    // ── Leistungen accordion ──
+    document.querySelectorAll('.leistung-item').forEach((item) => {
+      const toggle  = item.querySelector('.leistung-toggle');
+      const body    = item.querySelector('.leistung-body');
+      const chevron = item.querySelector('.leistung-chevron');
+      const bar     = item.querySelector('.leistung-bar');
+      const icon    = item.querySelector('.leistung-icon');
+
+      toggle.addEventListener('click', () => {
+        const isOpen = body.style.maxHeight && body.style.maxHeight !== '0px';
+
+        // Close all
+        document.querySelectorAll('.leistung-item').forEach((el) => {
+          el.querySelector('.leistung-body').style.maxHeight = '0px';
+          el.querySelector('.leistung-chevron').style.transform = '';
+          el.querySelector('.leistung-bar').classList.replace('bg-[#E94B53]', 'bg-white/10');
+          el.querySelector('.leistung-bar-ext').classList.replace('bg-[#E94B53]', 'bg-white/10');
+          el.querySelector('.leistung-icon').classList.replace('text-[#E94B53]', 'text-white/40');
+        });
+
+        // Open clicked
+        if (!isOpen) {
+          body.style.maxHeight = body.scrollHeight + 'px';
+          chevron.style.transform = 'rotate(180deg)';
+          bar.classList.replace('bg-white/10', 'bg-[#E94B53]');
+          item.querySelector('.leistung-bar-ext').classList.replace('bg-white/10', 'bg-[#E94B53]');
+          icon.classList.replace('text-white/40', 'text-[#E94B53]');
+        }
+      });
+    });
+
+    modalClose.addEventListener('click', closeModal);
+    modalBackdrop.addEventListener('click', closeModal);
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeModal();
+    });
+
+    // ── Projekte modal data ──
+    const projektData = {
+      projekt1: {
+        icon: `<span class="text-5xl font-bold text-[#E94B53]/30 leading-none">01</span>`,
+        title: 'Intelligente Verteilung von Materialstammdaten mit BRF+ und Fiori',
+        tags: 'BRF+ · RAP · Fiori',
+        body: `<p>Für einen weltweit führenden Hersteller wurde ein verteilter Materialstammprozess auf Basis von RAP und BRF+ entwickelt. Die Lösung erlaubt eine feldweise Steuerung der Verteilung, läuft asynchron und bietet durch Fiori Apps volle Transparenz und manuelle Eingriffsmöglichkeiten.</p>`
+      },
+      projekt2: {
+        icon: `<span class="text-5xl font-bold text-[#E94B53]/30 leading-none">02</span>`,
+        title: 'SAP-Integration einer Non-SAP Cloud-Lösung im Einkauf',
+        tags: 'OData · IDoc · Integration',
+        body: `<p>Bei einem Kunden aus der Rüstungsindustrie wurde eine Lieferanten-Cloudlösung in den SAP-Einkaufsprozess integriert. Per OData und IDoc wurden Bestell- und Stammdaten bidirektional angebunden – SAP blieb das führende System, während Lieferanten in der Cloud arbeiten.</p>`
+      },
+      projekt3: {
+        icon: `<span class="text-5xl font-bold text-[#E94B53]/30 leading-none">03</span>`,
+        title: 'SAPUI5-Wizard zur Digitalisierung des Erstmusterprozesses',
+        tags: 'SAPUI5 · QM · Digitalisierung',
+        body: `<p>Für ein produzierendes Unternehmen wurde eine SAPUI5 App entwickelt, die den Erstmusterprozess digitalisiert. Der Prozess ermöglicht es Qualitätsmitarbeitern, Daten effizient zu erfassen, Dokumente hochzuladen und automatisch eine QM-Meldung zu erstellen. Über eine flexible Steuerung wird der Prozess je nach Ergebnis entweder abgeschlossen oder wiederholt.</p>`
+      },
+      projekt4: {
+        icon: `<span class="text-5xl font-bold text-[#E94B53]/30 leading-none">04</span>`,
+        title: 'S/4HANA-Migration: Zukunftssichere Transformation des kundeneigenen ABAP-Codes',
+        tags: 'S/4HANA · ABAP · Migration',
+        body: `<p>Im Rahmen einer ERP-zu-S/4HANA-Transformation wurde der gesamte Eigenentwicklungsbestand eines Produktionsunternehmens analysiert, bereinigt und in SCRUM-Arbeitspakete überführt. Nicht kompatible Altlösungen wurden durch moderne Ersatzprozesse ersetzt – für eine saubere und zukunftsfähige Codebasis.</p>`
+      }
+    };
+
+    Object.assign(modalData, projektData);
+
+    // ── Contact form ──
+    const contactForm = document.getElementById('contact-form');
+    const contactSubmit = document.getElementById('contact-submit');
+    const formSuccess = document.getElementById('form-success');
+    const formError = document.getElementById('form-error');
+
+    contactForm?.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      contactSubmit.disabled = true;
+      contactSubmit.textContent = 'Wird gesendet …';
+      formError.classList.add('hidden');
+
+      try {
+        const res = await fetch(contactForm.action, {
+          method: 'POST',
+          body: new FormData(contactForm),
+          headers: { Accept: 'application/json' }
+        });
+
+        if (res.ok) {
+          contactForm.querySelectorAll('input, textarea, button').forEach(el => el.classList.add('hidden'));
+          formSuccess.classList.remove('hidden');
+        } else {
+          throw new Error('server error');
+        }
+      } catch {
+        contactSubmit.disabled = false;
+        contactSubmit.textContent = 'Nachricht senden';
+        formError.classList.remove('hidden');
+      }
+    });
+  </script>
+
+
 </Layout>
