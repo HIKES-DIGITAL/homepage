@@ -66,4 +66,10 @@
   h1, h2, h3, h4 {
     font-weight: 700;
   }
+
+  /* German hyphenation for long compound words */
+  h1, h2, h3, h4, p, span {
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
 }
