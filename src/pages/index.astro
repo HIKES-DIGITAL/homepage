@@ -46,25 +46,25 @@ import Layout from '../layouts/Layout.astro';
     </div>
 
     <!-- Text content bottom-left -->
-    <div class="relative z-10 px-6 md:px-14 pb-12 md:pb-16 max-w-5xl">
+    <div class="relative z-10 px-6 md:px-14 pb-12 md:pb-16 max-w-5xl pr-16 md:pr-14">
       <h1 data-reveal data-delay="100" class="text-5xl sm:text-7xl md:text-9xl font-bold text-white leading-none uppercase">
         HIKES DIGITAL
       </h1>
-      <p data-reveal data-delay="200" class="mt-4 text-sm md:text-xl lg:text-2xl font-light text-white/80 max-w-2xl">
+      <p data-reveal data-delay="200" class="mt-3 md:mt-4 text-xs sm:text-sm md:text-xl lg:text-2xl font-light text-white/80 max-w-xs sm:max-w-lg md:max-w-2xl">
         SAP-Architektur & Entwicklung mit Klarheit und Weitblick
       </p>
-      <div data-reveal data-delay="300" class="mt-8 flex gap-4">
-        <a href="#leistungen" class="px-8 py-4 bg-[#E94B53] text-white text-base font-bold tracking-widest uppercase hover:bg-white hover:text-[#0F1828] transition-colors">
+      <div data-reveal data-delay="300" class="mt-6 md:mt-8 flex flex-col sm:flex-row gap-3 md:gap-4">
+        <a href="#leistungen" class="px-6 md:px-8 py-3 md:py-4 bg-[#E94B53] text-white text-sm md:text-base font-bold tracking-widest uppercase hover:bg-white hover:text-[#0F1828] transition-colors text-center">
           Leistungen
         </a>
-        <a href="#kontakt" class="px-8 py-4 border border-white/30 text-white text-base font-bold tracking-widest uppercase hover:border-white transition-colors">
+        <a href="#kontakt" class="px-6 md:px-8 py-3 md:py-4 border border-white/30 text-white text-sm md:text-base font-bold tracking-widest uppercase hover:border-white transition-colors text-center">
           Kontakt
         </a>
       </div>
     </div>
 
-    <!-- Arrow bottom-right -->
-    <div class="absolute bottom-8 right-10 z-10">
+    <!-- Arrow bottom-right — hidden on mobile to avoid overlap -->
+    <div class="hidden sm:block absolute bottom-8 right-10 z-10">
       <a href="#intro" aria-label="Nach unten scrollen">
         <img src="/images/objects/arrow-down.svg" alt="" class="w-20 h-20 opacity-90 hover:opacity-100 transition-opacity" />
       </a>
