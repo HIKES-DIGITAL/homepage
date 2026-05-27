@@ -47,10 +47,10 @@ import Layout from '../layouts/Layout.astro';
 
     <!-- Text content bottom-left -->
     <div class="relative z-10 px-8 md:px-14 pb-16 max-w-5xl">
-      <h1 data-reveal data-delay="100" class="text-7xl md:text-9xl font-bold text-white leading-none uppercase whitespace-nowrap">
+      <h1 data-reveal data-delay="100" class="text-5xl sm:text-7xl md:text-9xl font-bold text-white leading-none uppercase">
         HIKES DIGITAL
       </h1>
-      <p data-reveal data-delay="200" class="mt-4 text-xl md:text-2xl font-light text-white/80 max-w-2xl">
+      <p data-reveal data-delay="200" class="mt-4 text-base md:text-xl lg:text-2xl font-light text-white/80 max-w-2xl">
         SAP-Architektur & Entwicklung mit Klarheit und Weitblick
       </p>
       <div data-reveal data-delay="300" class="mt-8 flex gap-4">
@@ -74,11 +74,11 @@ import Layout from '../layouts/Layout.astro';
   <!-- ── INTRO ── -->
   <section id="intro" class="bg-[#0F1828] text-white py-28 px-8 md:px-14">
     <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-start">
-      <h2 data-reveal="left" class="text-4xl md:text-5xl font-bold leading-tight">
+      <h2 data-reveal="left" class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
         Spezialisiert auf SAP,<br/>fokussiert auf<br/>Ihren Erfolg.
       </h2>
       <div data-reveal="right">
-        <p class="text-xl md:text-2xl font-light text-white/80 leading-relaxed">
+        <p class="text-lg md:text-xl lg:text-2xl font-light text-white/80 leading-relaxed">
           Wie erfahrene Pfadfinder navigieren wir durch das SAP-Gelände: mit tiefem Know-how in ABAP, SAP Fiori und S/4HANA. Wir begleiten Unternehmen sicher durch Systemwechsel, Individualentwicklungen und digitale Herausforderungen – Schritt für Schritt, zielgerichtet und mit klarem Kompass.
         </p>
         <div class="mt-8 w-14 h-0.5 bg-[#E94B53]"></div>
@@ -90,13 +90,13 @@ import Layout from '../layouts/Layout.astro';
   <section id="leistungen" class="bg-[#0B1220] text-white py-28 px-8 md:px-14">
     <div class="max-w-6xl mx-auto">
       <p class="text-base font-bold tracking-[0.3em] uppercase text-[#E94B53] mb-5">Was wir tun</p>
-      <h2 class="text-5xl md:text-6xl font-bold mb-20 max-w-xl">Leistungen, die den Weg ebnen.</h2>
+      <h2 class="text-3xl md:text-5xl lg:text-6xl font-bold mb-12 md:mb-20 max-w-xl">Leistungen, die den Weg ebnen.</h2>
 
       <div class="divide-y divide-white/10 border-y border-white/10">
 
         <!-- Row 1 -->
         <div class="leistung-item" data-reveal data-delay="100">
-          <button class="leistung-toggle group w-full text-left flex items-center gap-8 md:gap-16 py-10 cursor-pointer">
+          <button class="leistung-toggle group w-full text-left flex items-center gap-5 md:gap-16 py-8 md:py-10 cursor-pointer">
             <div class="leistung-icon shrink-0 text-white/40 group-hover:text-[#E94B53] transition-colors duration-300">
               <svg width="48" height="48" viewBox="0 0 32 32" fill="none">
                 <rect x="11" y="2" width="10" height="7" rx="1.5" stroke="currentColor" stroke-width="2.5"/>
@@ -107,7 +107,7 @@ import Layout from '../layouts/Layout.astro';
             </div>
             <div class="leistung-bar shrink-0 w-0.5 h-14 bg-white/10 group-hover:bg-[#E94B53] transition-colors duration-300"></div>
             <div class="flex-1 min-w-0">
-              <h3 class="text-2xl md:text-3xl font-bold uppercase tracking-wide text-white group-hover:text-[#E94B53] transition-colors duration-300 mb-2">Architektur & Konzeption</h3>
+              <h3 class="text-xl md:text-2xl lg:text-3xl font-bold uppercase tracking-wide text-white group-hover:text-[#E94B53] transition-colors duration-300 mb-2">Architektur & Konzeption</h3>
               <p class="text-lg font-light text-white/75 leading-relaxed">SAP-Lösungen ganzheitlich gedacht – von Anfang an mit klarem Fokus auf nachhaltige, skalierbare technische Konzepte.</p>
             </div>
             <svg class="leistung-chevron shrink-0 w-7 h-7 text-white/30 group-hover:text-[#E94B53] transition-all duration-300" viewBox="0 0 24 24" fill="none">
@@ -115,7 +115,7 @@ import Layout from '../layouts/Layout.astro';
             </svg>
           </button>
           <div class="leistung-body overflow-hidden max-h-0 transition-[max-height] duration-500 ease-in-out">
-            <div class="flex gap-8 md:gap-16 pb-10">
+            <div class="flex gap-5 md:gap-16 pb-8 md:pb-10">
               <div class="shrink-0 w-12"></div>
               <div class="leistung-bar-ext shrink-0 w-0.5 bg-white/10"></div>
               <div class="flex-1 space-y-4 text-lg font-light text-white/80 leading-relaxed">
@@ -128,13 +128,13 @@ import Layout from '../layouts/Layout.astro';
 
         <!-- Row 2 -->
         <div class="leistung-item" data-reveal data-delay="200">
-          <button class="leistung-toggle group w-full text-left flex items-center gap-8 md:gap-16 py-10 cursor-pointer">
+          <button class="leistung-toggle group w-full text-left flex items-center gap-5 md:gap-16 py-8 md:py-10 cursor-pointer">
             <div class="leistung-icon shrink-0 text-white/40 group-hover:text-[#E94B53] transition-colors duration-300">
               <svg width="48" height="48" viewBox="0 0 32 32" fill="none"><rect x="3" y="5" width="26" height="18" rx="2" stroke="currentColor" stroke-width="2.5"/><path d="M10 27H22" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M16 23V27" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
             </div>
             <div class="leistung-bar shrink-0 w-0.5 h-14 bg-white/10 group-hover:bg-[#E94B53] transition-colors duration-300"></div>
             <div class="flex-1 min-w-0">
-              <h3 class="text-2xl md:text-3xl font-bold uppercase tracking-wide text-white group-hover:text-[#E94B53] transition-colors duration-300 mb-2">Fiori & UI5</h3>
+              <h3 class="text-xl md:text-2xl lg:text-3xl font-bold uppercase tracking-wide text-white group-hover:text-[#E94B53] transition-colors duration-300 mb-2">Fiori & UI5</h3>
               <p class="text-lg font-light text-white/75 leading-relaxed">Nutzerzentrierte, moderne Oberflächen, die SAP-Standards sinnvoll erweitern – technisch solide und wartbar.</p>
             </div>
             <svg class="leistung-chevron shrink-0 w-7 h-7 text-white/30 group-hover:text-[#E94B53] transition-all duration-300" viewBox="0 0 24 24" fill="none">
@@ -142,7 +142,7 @@ import Layout from '../layouts/Layout.astro';
             </svg>
           </button>
           <div class="leistung-body overflow-hidden max-h-0 transition-[max-height] duration-500 ease-in-out">
-            <div class="flex gap-8 md:gap-16 pb-10">
+            <div class="flex gap-5 md:gap-16 pb-8 md:pb-10">
               <div class="shrink-0 w-12"></div>
               <div class="leistung-bar-ext shrink-0 w-0.5 bg-white/10"></div>
               <div class="flex-1 space-y-4 text-lg font-light text-white/80 leading-relaxed">
@@ -155,13 +155,13 @@ import Layout from '../layouts/Layout.astro';
 
         <!-- Row 3 -->
         <div class="leistung-item" data-reveal data-delay="300">
-          <button class="leistung-toggle group w-full text-left flex items-center gap-8 md:gap-16 py-10 cursor-pointer">
+          <button class="leistung-toggle group w-full text-left flex items-center gap-5 md:gap-16 py-8 md:py-10 cursor-pointer">
             <div class="leistung-icon shrink-0 text-white/40 group-hover:text-[#E94B53] transition-colors duration-300">
               <svg width="48" height="48" viewBox="0 0 32 32" fill="none"><path d="M8 10L4 16L8 22" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M24 10L28 16L24 22" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M19 6L13 26" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
             </div>
             <div class="leistung-bar shrink-0 w-0.5 h-14 bg-white/10 group-hover:bg-[#E94B53] transition-colors duration-300"></div>
             <div class="flex-1 min-w-0">
-              <h3 class="text-2xl md:text-3xl font-bold uppercase tracking-wide text-white group-hover:text-[#E94B53] transition-colors duration-300 mb-2">ABAP Entwicklung</h3>
+              <h3 class="text-xl md:text-2xl lg:text-3xl font-bold uppercase tracking-wide text-white group-hover:text-[#E94B53] transition-colors duration-300 mb-2">ABAP Entwicklung</h3>
               <p class="text-lg font-light text-white/75 leading-relaxed">Sauberer Code mit modernen Ansätzen – Clean ABAP, RAP und CDS mit dem Blick für das große Ganze.</p>
             </div>
             <svg class="leistung-chevron shrink-0 w-7 h-7 text-white/30 group-hover:text-[#E94B53] transition-all duration-300" viewBox="0 0 24 24" fill="none">
@@ -169,7 +169,7 @@ import Layout from '../layouts/Layout.astro';
             </svg>
           </button>
           <div class="leistung-body overflow-hidden max-h-0 transition-[max-height] duration-500 ease-in-out">
-            <div class="flex gap-8 md:gap-16 pb-10">
+            <div class="flex gap-5 md:gap-16 pb-8 md:pb-10">
               <div class="shrink-0 w-12"></div>
               <div class="leistung-bar-ext shrink-0 w-0.5 bg-white/10"></div>
               <div class="flex-1 space-y-4 text-lg font-light text-white/80 leading-relaxed">
@@ -182,13 +182,13 @@ import Layout from '../layouts/Layout.astro';
 
         <!-- Row 4 -->
         <div class="leistung-item" data-reveal data-delay="400">
-          <button class="leistung-toggle group w-full text-left flex items-center gap-8 md:gap-16 py-10 cursor-pointer">
+          <button class="leistung-toggle group w-full text-left flex items-center gap-5 md:gap-16 py-8 md:py-10 cursor-pointer">
             <div class="leistung-icon shrink-0 text-white/40 group-hover:text-[#E94B53] transition-colors duration-300">
               <svg width="48" height="48" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="2.5"/><path d="M16 8V16L21 19" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </div>
             <div class="leistung-bar shrink-0 w-0.5 h-14 bg-white/10 group-hover:bg-[#E94B53] transition-colors duration-300"></div>
             <div class="flex-1 min-w-0">
-              <h3 class="text-2xl md:text-3xl font-bold uppercase tracking-wide text-white group-hover:text-[#E94B53] transition-colors duration-300 mb-2">S/4HANA Readiness</h3>
+              <h3 class="text-xl md:text-2xl lg:text-3xl font-bold uppercase tracking-wide text-white group-hover:text-[#E94B53] transition-colors duration-300 mb-2">S/4HANA Readiness</h3>
               <p class="text-lg font-light text-white/75 leading-relaxed">Gezielte Analysen, Machbarkeitsbewertungen und objektive Code-Reviews für Migrationen und Optimierungen.</p>
             </div>
             <svg class="leistung-chevron shrink-0 w-7 h-7 text-white/30 group-hover:text-[#E94B53] transition-all duration-300" viewBox="0 0 24 24" fill="none">
@@ -196,7 +196,7 @@ import Layout from '../layouts/Layout.astro';
             </svg>
           </button>
           <div class="leistung-body overflow-hidden max-h-0 transition-[max-height] duration-500 ease-in-out">
-            <div class="flex gap-8 md:gap-16 pb-10">
+            <div class="flex gap-5 md:gap-16 pb-8 md:pb-10">
               <div class="shrink-0 w-12"></div>
               <div class="leistung-bar-ext shrink-0 w-0.5 bg-white/10"></div>
               <div class="flex-1 space-y-4 text-lg font-light text-white/80 leading-relaxed">
@@ -221,7 +221,7 @@ import Layout from '../layouts/Layout.astro';
     />
     <div class="absolute inset-0 bg-gradient-to-t from-[#0F1828] via-[#0F1828]/20 to-transparent"></div>
     <div class="relative z-10 px-8 md:px-14 pb-10">
-      <h2 class="text-6xl md:text-8xl lg:text-9xl font-bold text-white uppercase leading-none tracking-tight">
+      <h2 class="text-4xl md:text-6xl lg:text-8xl xl:text-9xl font-bold text-white uppercase leading-none tracking-tight">
         Warum HIKES DIGITAL?
       </h2>
     </div>
@@ -297,7 +297,7 @@ import Layout from '../layouts/Layout.astro';
   <section id="projekte" class="bg-[#131f33] text-white py-28 px-8 md:px-14">
     <div class="max-w-6xl mx-auto">
       <p class="text-base font-bold tracking-[0.3em] uppercase text-[#E94B53] mb-5">Referenzen</p>
-      <h2 class="text-5xl md:text-6xl font-bold mb-20 max-w-xl">Projekte, die Spuren hinterlassen.</h2>
+      <h2 class="text-3xl md:text-5xl lg:text-6xl font-bold mb-12 md:mb-20 max-w-xl">Projekte, die Spuren hinterlassen.</h2>
 
       <div class="grid md:grid-cols-2 gap-px bg-white/5">
 
@@ -387,7 +387,7 @@ import Layout from '../layouts/Layout.astro';
       </div>
       <div>
         <p class="text-base font-bold tracking-[0.3em] uppercase text-[#E94B53] mb-5">Über uns</p>
-        <h2 class="text-5xl md:text-6xl font-bold mb-4 leading-tight">Maik Pfäffle</h2>
+        <h2 class="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">Maik Pfäffle</h2>
         <p class="text-base font-bold tracking-widest uppercase text-white/75 mb-10">SAP Architect & Founder</p>
         <p class="text-xl font-light text-white/80 leading-relaxed mb-6">
           Mit langjähriger Erfahrung in ABAP, Fiori und S/4HANA habe ich HIKES DIGITAL gegründet, um Unternehmen einen Partner zu bieten, der Strategie und technische Umsetzung wirklich zusammendenkt.
@@ -406,7 +406,7 @@ import Layout from '../layouts/Layout.astro';
 
       <div>
         <p data-reveal class="text-base font-bold tracking-[0.3em] uppercase text-[#E94B53] mb-5">Kontakt</p>
-        <h2 data-reveal class="text-5xl md:text-6xl font-bold leading-tight mb-8 uppercase">
+        <h2 data-reveal class="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8 uppercase">
           Finden wir<br/>Ihren Weg!
         </h2>
         <p data-reveal class="text-xl font-light text-white/80 leading-relaxed">
@@ -458,7 +458,7 @@ import Layout from '../layouts/Layout.astro';
   <!-- ── KONTAKT + FOOTER ── -->
   <section id="kontakt" class="bg-[#E94B53] px-8 md:px-14 pt-16 pb-10">
     <div class="max-w-6xl mx-auto">
-      <h2 data-reveal class="text-5xl md:text-6xl font-bold text-white mb-14">Kontakt</h2>
+      <h2 data-reveal class="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-10 md:mb-14">Kontakt</h2>
 
       <div data-reveal class="grid md:grid-cols-3 gap-12 pb-12 border-b border-white/20">
         <div class="text-white font-light text-lg leading-loose">
@@ -472,7 +472,7 @@ import Layout from '../layouts/Layout.astro';
         </div>
         <div class="flex flex-col items-end justify-between gap-8">
           <div class="text-white font-light text-lg text-right space-y-1">
-            <p>Datenschutz</p>
+            <p><a href="/datenschutz" class="hover:text-white/85 transition-colors">Datenschutz</a></p>
             <p><a href="/impressum" class="hover:text-white/85 transition-colors">Impressum</a></p>
           </div>
           <div class="flex items-center gap-3">
