@@ -493,18 +493,18 @@ import Layout from '../layouts/Layout.astro';
 
   <!-- ── SCRIPTS ── -->
   <!-- ── MODAL OVERLAY ── -->
-  <div id="modal-overlay" class="fixed inset-0 z-[200] flex items-center justify-center p-6 opacity-0 pointer-events-none transition-opacity duration-300">
+  <div id="modal-overlay" class="fixed inset-0 z-[200] flex items-center justify-center p-3 md:p-6 opacity-0 pointer-events-none transition-opacity duration-300">
     <div class="absolute inset-0 bg-[#0F1828]/90 backdrop-blur-sm" id="modal-backdrop"></div>
-    <div id="modal-box" class="relative bg-[#131f33] border border-white/10 max-w-2xl w-full max-h-[85vh] overflow-y-auto translate-y-8 transition-transform duration-300 shadow-2xl">
+    <div id="modal-box" class="relative bg-[#131f33] border border-white/10 max-w-2xl w-full max-h-[90vh] overflow-y-auto overflow-x-hidden translate-y-8 transition-transform duration-300 shadow-2xl">
       <!-- Red top bar -->
       <div class="h-1 bg-[#E94B53] w-full"></div>
       <!-- Close button -->
-      <button id="modal-close" class="absolute top-5 right-6 text-white/75 hover:text-white transition-colors text-2xl leading-none font-light">✕</button>
-      <div class="p-7 md:p-14">
-        <div id="modal-icon" class="text-[#E94B53] mb-4 md:mb-6"></div>
-        <p id="modal-tags" class="text-xs md:text-sm font-bold tracking-[0.25em] uppercase text-[#E94B53] mb-3 md:mb-4 hidden"></p>
-        <h3 id="modal-title" class="text-2xl md:text-4xl font-bold uppercase tracking-wide text-white mb-5 md:mb-8 leading-snug"></h3>
-        <div id="modal-body" class="text-base md:text-lg font-light text-white/85 leading-relaxed space-y-4"></div>
+      <button id="modal-close" class="absolute top-4 right-4 text-white/75 hover:text-white transition-colors text-xl leading-none font-light w-8 h-8 flex items-center justify-center">✕</button>
+      <div class="p-5 md:p-14">
+        <div id="modal-icon" class="text-[#E94B53] mb-3 md:mb-6 hidden md:block"></div>
+        <p id="modal-tags" class="text-xs font-bold tracking-[0.2em] uppercase text-[#E94B53] mb-2 md:mb-4 hidden"></p>
+        <h3 id="modal-title" class="text-xl md:text-4xl font-bold uppercase tracking-normal md:tracking-wide text-white mb-4 md:mb-8 leading-snug break-words pr-8"></h3>
+        <div id="modal-body" class="text-sm md:text-lg font-light text-white/85 leading-relaxed space-y-4"></div>
       </div>
     </div>
   </div>
