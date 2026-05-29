@@ -67,13 +67,8 @@
     font-weight: 700;
   }
 
-  /* German hyphenation — only for body text, not headings */
-  p, li {
-    hyphens: auto;
-    overflow-wrap: break-word;
-  }
-
-  h1, h2, h3, h4, span {
+  /* Only break words when they truly don't fit the line */
+  h1, h2, h3, h4, p, li, span {
     hyphens: manual;
     overflow-wrap: break-word;
   }
